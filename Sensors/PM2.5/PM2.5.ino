@@ -1,4 +1,6 @@
 #include <MHZ19.h>
+#include <SoftwareSerial.h>
+#include <Arduino.h>
 
 /*
   PM2.5 Demo
@@ -12,15 +14,19 @@
 */
 
 // Serial Port connections for PM2.5 Sensor
-#define RXD2 16 // To sensor RXD
-#define TXD2 17 // To sensor TXD
+#define RX_PIN 4 // To sensor RXD
+#define TX_PIN 0 // To sensor TXD
+#define BAUDRATE 9600
+EspSoftwareSerial::UART mySerial(RX_PIN, TX_PIN);                   
 
 void setup() {
   // our debugging output
-  Serial.begin(115200);
+  Serial.begin(9600); 
+  mySerial.begin(BAUDRATE);                               // (Uno example) device to MH-Z19 serial start
+  //myMHZ19.begin(mySerial);
 
   // Set up UART connection
-  Serial1.begin(9600, SERIAL_8N1, RXD2, TXD2);
+  Serial1.begin(9600, SERIAL_8N1, RX_PIN, TX_PIN);
 }
 
 struct pms5003data {
