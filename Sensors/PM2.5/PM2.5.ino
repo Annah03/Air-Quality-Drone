@@ -14,10 +14,10 @@
 */
 
 // Serial Port connections for PM2.5 Sensor
-#define RX_PIN 4 // To sensor RXD
-#define TX_PIN 0 // To sensor TXD
+#define RX_PIN1 4 // To sensor RXD
+#define TX_PIN1 0 // To sensor TXD
 #define BAUDRATE 9600
-EspSoftwareSerial::UART mySerial(RX_PIN, TX_PIN);                   
+EspSoftwareSerial::UART mySerial(RX_PIN1, TX_PIN1);                   
 
 void setup() {
   // our debugging output
@@ -26,7 +26,7 @@ void setup() {
   //myMHZ19.begin(mySerial);
 
   // Set up UART connection
-  Serial1.begin(9600, SERIAL_8N1, RX_PIN, TX_PIN);
+  Serial1.begin(9600, SERIAL_8N1, RX_PIN1, TX_PIN1);
 }
 
 struct pms5003data {
