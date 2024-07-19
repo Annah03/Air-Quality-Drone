@@ -118,7 +118,7 @@ GenerateClassCluster=0
 DocumentUniqueId=KMUOJQUZ
 
 [Document5]
-DocumentPath=Schlib1.SchLib
+DocumentPath=..\..\..\..\..\Downloads\DHT11\DHT11.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -132,9 +132,26 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=OYNTAQMT
+DocumentUniqueId=BHUIHHFH
 
 [Document6]
+DocumentPath=..\..\..\..\..\Downloads\DHT11\SENSOR-DHT11.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=UYODLMPB
+
+[Document7]
 DocumentPath=..\PM_2-5_Project\PM2-5.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -150,23 +167,6 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CVGODODH
-
-[Document7]
-DocumentPath=PcbLib1.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=LMHIABMW
 
 [Document8]
 DocumentPath=..\..\..\..\..\Downloads\ESP32-DEVKITC-32U1\MODULE_ESP32-DEVKITC-32U.PcbLib
