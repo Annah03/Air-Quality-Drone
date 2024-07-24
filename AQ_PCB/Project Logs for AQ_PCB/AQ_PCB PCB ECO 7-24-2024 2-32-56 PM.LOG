@@ -1,0 +1,55 @@
+Added Component: Designator=10kohm(Resistor)
+Added Component: Designator=CO-2(MH-Z19B-FOOT)
+Add component (AddParameter): Name = "Availability"; Value = "Not in stock"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/MH-Z19B/Winsen/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Winsen"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "MH-Z19B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Package"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/MH-Z19B/Winsen/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=PM 2.5-2(PM2.5)
+Added Component: Designator=TEMP&HUMID-2(SENSOR-DHT11)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/DHT11/Ersa/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "UNIVERSAL-SOLDER Electronics Ltd"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "DHT11"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/DHT11/Ersa/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U2(MODULE_ESP32-DEVKITC-32U)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/ESP32-DEVKITC-32U/Espressif+Systems/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Espressif Systems"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "ESP32-DEVKITC-32U"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "CUSTOM-38 ESPRESSIF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/ESP32-DEVKITC-32U/Espressif+Systems/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+5 Pin=10kohm-2
+Added Pin To Net: NetName=+5 Pin=CO-2-VIN
+Added Pin To Net: NetName=+5 Pin=PM 2.5-2-8
+Added Pin To Net: NetName=+5 Pin=TEMP&HUMID-2-P$1
+Added Pin To Net: NetName=+5 Pin=U2-19
+Added Net: Name=+5
+Added Pin To Net: NetName=DHT11 Pin=10kohm-1
+Added Pin To Net: NetName=DHT11 Pin=TEMP&HUMID-2-P$2
+Added Pin To Net: NetName=DHT11 Pin=U2-37
+Added Net: Name=DHT11
+Added Pin To Net: NetName=GND Pin=CO-2-GND
+Added Pin To Net: NetName=GND Pin=PM 2.5-2-7
+Added Pin To Net: NetName=GND Pin=TEMP&HUMID-2-P$4
+Added Pin To Net: NetName=GND Pin=U2-38
+Added Net: Name=GND
+Added Pin To Net: NetName=PICO_CO2 Pin=CO-2-RX
+Added Pin To Net: NetName=PICO_CO2 Pin=U2-28
+Added Net: Name=PICO_CO2
+Added Pin To Net: NetName=PICO_PM Pin=PM 2.5-2-5
+Added Pin To Net: NetName=PICO_PM Pin=U2-25
+Added Net: Name=PICO_PM
+Added Pin To Net: NetName=POCI_CO2 Pin=CO-2-TX
+Added Pin To Net: NetName=POCI_CO2 Pin=U2-27
+Added Net: Name=POCI_CO2
+Added Pin To Net: NetName=POCI_PM Pin=PM 2.5-2-4
+Added Pin To Net: NetName=POCI_PM Pin=U2-26
+Added Net: Name=POCI_PM
+Added Class: Name=AQ_Updated_Schematic
+Added Rule: Name=Schematic Supply Nets
+Added Rule: Name=Schematic Supply Nets_1
