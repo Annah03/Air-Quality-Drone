@@ -56,7 +56,7 @@ AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=0
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -135,7 +135,7 @@ GenerateClassCluster=0
 DocumentUniqueId=SHEXLWHJ
 
 [Document6]
-DocumentPath=..\..\..\..\..\AppData\Local\Temp\0f66f066-7ab7-4116-826f-c50e66f7a63d_Components - 19.07.24 - 18.14.zip.63d\Components - 19.07.24 - 18.14\Components - 19.07.24 - 18.14.SchLib
+DocumentPath=..\..\..\..\..\AppData\Local\Temp\6eb634bd-2e42-455b-ab18-8d3cedf98ccf_Components - 19.07.24 - 18.14.zip.ccf\Components - 19.07.24 - 18.14.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -220,23 +220,6 @@ GenerateClassCluster=0
 DocumentUniqueId=ITXHELBO
 
 [Document11]
-DocumentPath=..\..\..\..\..\AppData\Local\Temp\0f66f066-7ab7-4116-826f-c50e66f7a63d_Components - 19.07.24 - 18.14.zip.63d\Components - 19.07.24 - 18.14\Components - 19.07.24 - 18.14.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=HBXNHHJN
-
-[Document12]
 DocumentPath=..\..\..\..\..\Downloads\ESP32-DEVKITC-32U1\MODULE_ESP32-DEVKITC-32U.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -253,7 +236,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=AKLYVWVF
 
-[Document13]
+[Document12]
 DocumentPath=AQ_PCB.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -270,8 +253,25 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[Document13]
+DocumentPath=..\..\..\..\..\AppData\Local\Temp\fae699a7-6fea-4379-9a90-e1a87c36988a_Components - 19.07.24 - 18.14.zip.88a\Components - 19.07.24 - 18.14.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=HBXNHHJN
+
 [Document14]
-DocumentPath=..\..\..\..\..\AppData\Local\Temp\6f1d00c5-a3f0-40de-9833-c9138847134f_Components - 19.07.24 - 18.26.zip.34f\Components - 19.07.24 - 18.26\Components - 19.07.24 - 18.26.PcbLib
+DocumentPath=..\..\..\..\..\AppData\Local\Temp\4e17ab38-99a4-4fb6-955b-32e1c0c95d2d_Components - 19.07.24 - 18.26.zip.d2d\Components - 19.07.24 - 18.26.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -305,6 +305,23 @@ GenerateClassCluster=0
 DocumentUniqueId=WBITDMIP
 
 [Document16]
+DocumentPath=..\..\..\..\..\AppData\Local\Temp\63df2230-2c4b-4e2d-8f50-02ff5d6140c2_Components - 19.07.24 - 18.26.zip.0c2\Components - 19.07.24 - 18.26.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=JNNZPJLF
+
+[Document17]
 DocumentPath=Capacitor.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -321,8 +338,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YGABURTR
 
-[Document17]
-DocumentPath=..\..\..\..\..\AppData\Local\Temp\6f1d00c5-a3f0-40de-9833-c9138847134f_Components - 19.07.24 - 18.26.zip.34f\Components - 19.07.24 - 18.26\Components - 19.07.24 - 18.26.SchLib
+[Document18]
+DocumentPath=Resistor.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -336,7 +353,24 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=JNNZPJLF
+DocumentUniqueId=EXDWSFQH
+
+[Document19]
+DocumentPath=Resistor.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=TFKFGOXF
 
 [Configuration1]
 Name=Sources
@@ -474,7 +508,7 @@ OutputDefault1=0
 Name=Documentation Outputs
 Description=
 TargetPrinter=BRW30C9ABA9F994
-PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
+PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=0
 OutputType1=Composite
 OutputName1=Composite Drawing
 OutputDocumentPath1=
@@ -546,7 +580,9 @@ OutputName12=Schematic Prints
 OutputDocumentPath12=
 OutputVariantName12=
 OutputDefault12=0
-PageOptions12=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+PageOptions12=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.04|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=Letter|PaperIndex=1
+Configuration12_Name1=OutputConfigurationParameter1
+Configuration12_Item1=Record=SchPrintView|ShowNoERC=True|ShowParamSet=True|ShowProbe=True|ShowBlanket=True|NoERCSymbolsToShow="Thin Cross","Thick Cross","Small Cross",Checkbox,Triangle|ShowNote=True|ShowNoteCollapsed=True|ShowOpenEnds=True|ExpandDesignator=True|ExpandNetLabel=False|ExpandPort=False|ExpandSheetNum=False|ExpandDocNum=False|PrintArea=0|PrintAreaRect.X1=0|PrintAreaRect.Y1=0|PrintAreaRect.X2=0|PrintAreaRect.Y2=0|DocumentPath=C:\Users\annah\OneDrive\Documents\GitHub\Air-Quality-Drone\AQ_PCB\AQ_Schematic.SchDoc
 OutputType13=SimView Print
 OutputName13=SimView Prints
 OutputDocumentPath13=
@@ -1267,7 +1303,7 @@ NetClassManualEnabled=1
 NetClassSeparateForBusSections=0
 
 [LibraryUpdateOptions]
-SelectedOnly=0
+SelectedOnly=1
 UpdateVariants=1
 UpdateToLatestRevision=1
 PartTypes=0
