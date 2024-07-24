@@ -135,23 +135,6 @@ GenerateClassCluster=0
 DocumentUniqueId=SHEXLWHJ
 
 [Document6]
-DocumentPath=..\..\..\..\..\AppData\Local\Temp\6eb634bd-2e42-455b-ab18-8d3cedf98ccf_Components - 19.07.24 - 18.14.zip.ccf\Components - 19.07.24 - 18.14.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=XHHEWDAO
-
-[Document7]
 DocumentPath=..\..\..\..\..\Downloads\DHT11\DHT11.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -168,7 +151,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=BHUIHHFH
 
-[Document8]
+[Document7]
 DocumentPath=..\..\..\..\..\Downloads\DHT11\SENSOR-DHT11.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -185,7 +168,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UYODLMPB
 
-[Document9]
+[Document8]
 DocumentPath=..\PM_2-5_Project\PM2-5.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -202,7 +185,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CVGODODH
 
-[Document10]
+[Document9]
 DocumentPath=..\..\..\..\..\Downloads\MH-Z19B\MH-Z19B-FOOT.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -219,7 +202,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=ITXHELBO
 
-[Document11]
+[Document10]
 DocumentPath=..\..\..\..\..\Downloads\ESP32-DEVKITC-32U1\MODULE_ESP32-DEVKITC-32U.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -236,7 +219,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=AKLYVWVF
 
-[Document12]
+[Document11]
 DocumentPath=AQ_PCB.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -253,41 +236,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document13]
-DocumentPath=..\..\..\..\..\AppData\Local\Temp\fae699a7-6fea-4379-9a90-e1a87c36988a_Components - 19.07.24 - 18.14.zip.88a\Components - 19.07.24 - 18.14.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=HBXNHHJN
-
-[Document14]
-DocumentPath=..\..\..\..\..\AppData\Local\Temp\4e17ab38-99a4-4fb6-955b-32e1c0c95d2d_Components - 19.07.24 - 18.26.zip.d2d\Components - 19.07.24 - 18.26.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=YQGLKHEC
-
-[Document15]
+[Document12]
 DocumentPath=Capacitor.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -304,24 +253,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=WBITDMIP
 
-[Document16]
-DocumentPath=..\..\..\..\..\AppData\Local\Temp\63df2230-2c4b-4e2d-8f50-02ff5d6140c2_Components - 19.07.24 - 18.26.zip.0c2\Components - 19.07.24 - 18.26.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=JNNZPJLF
-
-[Document17]
+[Document13]
 DocumentPath=Capacitor.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -338,7 +270,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YGABURTR
 
-[Document18]
+[Document14]
 DocumentPath=Resistor.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -355,7 +287,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=EXDWSFQH
 
-[Document19]
+[Document15]
 DocumentPath=Resistor.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1307,6 +1239,12 @@ SelectedOnly=1
 UpdateVariants=1
 UpdateToLatestRevision=1
 PartTypes=0
+ComponentLibIdentifierKind0=Library Name And Type
+ComponentLibraryIdentifier0=MH-Z19B.SchLib
+ComponentDesignItemID0=MH-Z19B
+ComponentSymbolReference0=MH-Z19B
+ComponentUpdate0=1
+ComponentIsDeviceSheet0=0
 FullReplace=1
 UpdateDesignatorLock=1
 UpdatePartIDLock=1
@@ -1320,6 +1258,35 @@ RemoveParameters=0
 AddModels=1
 RemoveModels=1
 UpdateCurrentModels=1
+ParameterName0=Availability
+ParameterUpdate0=1
+ParameterName1=Check_prices
+ParameterUpdate1=1
+ParameterName2=Comment
+ParameterUpdate2=1
+ParameterName3=Component Kind
+ParameterUpdate3=1
+ParameterName4=Description
+ParameterUpdate4=1
+ParameterName5=Library Reference
+ParameterUpdate5=1
+ParameterName6=MF
+ParameterUpdate6=1
+ParameterName7=MP
+ParameterUpdate7=1
+ParameterName8=Package
+ParameterUpdate8=1
+ParameterName9=Price
+ParameterUpdate9=1
+ParameterName10=SnapEDA_Link
+ParameterUpdate10=1
+ParameterName11=Value
+ParameterUpdate11=1
+ModelTypeGroup0=PCBLIB
+ModelTypeUpdate0=1
+ModelType0=PCBLIB
+ModelName0=MH-Z19B-FOOT
+ModelUpdate0=1
 
 [DatabaseUpdateOptions]
 SelectedOnly=0
