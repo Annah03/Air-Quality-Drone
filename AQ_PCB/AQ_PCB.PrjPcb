@@ -50,23 +50,6 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=AQ_Schematic.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=0
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=MXFRYAOZ
-
-[Document2]
 DocumentPath=AQ_PCB.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -83,7 +66,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=BRJLGWGH
 
-[Document3]
+[Document2]
 DocumentPath=..\..\..\..\..\Downloads\ESP32-DEVKITC-32U1\ESP32-DEVKITC-32U.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -100,7 +83,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CNFEKQZT
 
-[Document4]
+[Document3]
 DocumentPath=..\PM_2-5_Project\G5_Connector.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -117,7 +100,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=KMUOJQUZ
 
-[Document5]
+[Document4]
 DocumentPath=..\..\..\..\..\Downloads\MH-Z19B\MH-Z19B.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -134,7 +117,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SHEXLWHJ
 
-[Document6]
+[Document5]
 DocumentPath=..\..\..\..\..\Downloads\DHT11\DHT11.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -151,7 +134,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=BHUIHHFH
 
-[Document7]
+[Document6]
 DocumentPath=..\..\..\..\..\Downloads\DHT11\SENSOR-DHT11.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -168,7 +151,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UYODLMPB
 
-[Document8]
+[Document7]
 DocumentPath=..\PM_2-5_Project\PM2-5.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -185,7 +168,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=CVGODODH
 
-[Document9]
+[Document8]
 DocumentPath=..\..\..\..\..\Downloads\MH-Z19B\MH-Z19B-FOOT.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -202,7 +185,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=ITXHELBO
 
-[Document10]
+[Document9]
 DocumentPath=..\..\..\..\..\Downloads\ESP32-DEVKITC-32U1\MODULE_ESP32-DEVKITC-32U.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -219,7 +202,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=AKLYVWVF
 
-[Document11]
+[Document10]
 DocumentPath=AQ_PCB.BomDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -236,7 +219,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document12]
+[Document11]
 DocumentPath=Capacitor.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -253,7 +236,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=WBITDMIP
 
-[Document13]
+[Document12]
 DocumentPath=Capacitor.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -270,7 +253,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YGABURTR
 
-[Document14]
+[Document13]
 DocumentPath=Resistor.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -287,7 +270,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=EXDWSFQH
 
-[Document15]
+[Document14]
 DocumentPath=Resistor.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -304,7 +287,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TFKFGOXF
 
-[Document16]
+[Document15]
 DocumentPath=AQ_Updated_Schematic.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
