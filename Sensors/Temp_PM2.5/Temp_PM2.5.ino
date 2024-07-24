@@ -37,10 +37,9 @@ struct pms5003data data;
 
 void loop() {
   // put your main code here, to run repeatedly:
-  temp_humid();
-  delay(1000);
   pm();
-
+  temp_humid();
+  delay(2000);
 }
 
 void temp_humid() 
@@ -71,7 +70,7 @@ if (readPMSdata(&Serial1)) {
     Serial.print("\t\tPM 2.5: "); Serial.print(data.pm25_standard);
     Serial.print("\t\tPM 10: "); Serial.println(data.pm100_standard);
     Serial.println("---------------------------------------");
-    Serial.println("Concentration Units (environmental)");
+    /*Serial.println("Concentration Units (environmental)");
     Serial.print("PM 1.0: "); Serial.print(data.pm10_env);
     Serial.print("\t\tPM 2.5: "); Serial.print(data.pm25_env);
     Serial.print("\t\tPM 10: "); Serial.println(data.pm100_env);
@@ -83,6 +82,7 @@ if (readPMSdata(&Serial1)) {
     Serial.print("Particles > 5.0um / 0.1L air:"); Serial.println(data.particles_50um);
     Serial.print("Particles > 10.0 um / 0.1L air:"); Serial.println(data.particles_100um);
     Serial.println("---------------------------------------");
+    */
   }
 }
 
