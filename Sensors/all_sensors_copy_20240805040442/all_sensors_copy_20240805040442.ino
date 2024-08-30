@@ -1,7 +1,10 @@
-
+#include <WiFi.h>
 #include <MHZ19.h>
 #include <SoftwareSerial.h>
 #include <Arduino.h>
+#include "MHZ19.h"
+#include "DHT.h"
+
 
 /*
   PM2.5 Demo
@@ -18,16 +21,40 @@
 #define RX_PIN1 4 // To sensor RXD
 #define TX_PIN1 0 // To sensor TXD
 #define BAUDRATE 9600
-EspSoftwareSerial::UART mySerial(RX_PIN1, TX_PIN1);                   
+EspSoftwareSerial::UART mySerial1(RX_PIN1, TX_PIN1);     
+
+#define RX_PIN 16                                          // Rx pin which the MHZ19 Tx pin is attached to
+#define TX_PIN 17
+MHZ19 myMHZ19;
+EspSoftwareSerial::UART mySerial(RX_PIN, TX_PIN);
+
+unsigned long getDataTimer = 0;
+
+#define DHTPIN 23  
+#define DHTTYPE DHT22
+DHT dht(DHTPIN, DHTTYPE);
+
+//wifi
+const char* ssid = "eero";
+const char* password = "Lucy2020";
+WiFiServer server(80);
+
+String header;
+
 
 void setup() {
   // our debugging output
   Serial.begin(9600); 
-  mySerial.begin(BAUDRATE);                               // (Uno example) device to MH-Z19 serial start
+  mySerial1.begin(BAUDRATE);                               // (Uno example) device to MH-Z19 serial start
   //myMHZ19.begin(mySerial);
 
   // Set up UART connection
   Serial1.begin(9600, SERIAL_8N1, RX_PIN1, TX_PIN1);
+  mySerial.begin(BAUDRATE);   
+  myMHZ19.begin(mySerial);
+  myMHZ19.autoCalibration();
+  Serial.println(F("DHTxx test!"));
+  dht.begin();
 }
 
 struct pms5003data {
@@ -44,6 +71,7 @@ struct pms5003data data;
 void loop() {
   if (readPMSdata(&Serial1)) {
     // reading data was successful!
+    //delay(2000);
     Serial.println();
     Serial.println("---------------------------------------");
     Serial.println("Concentration Units (standard)");
@@ -64,8 +92,66 @@ void loop() {
     Serial.print("Particles > 10.0 um / 0.1L air:"); Serial.println(data.particles_100um);
     Serial.println("---------------------------------------");
   }
+  //delay(2000);
+  if (millis() - getDataTimer >= 4000)
+    {
+        int CO2;
+
+        /* note: getCO2() default is command "CO2 Unlimited". This returns the correct CO2 reading even
+        if below background CO2 levels or above range (useful to validate sensor). You can use the
+        usual documented command with getCO2(false) */
+
+        CO2 = myMHZ19.getCO2();                             // Request CO2 (as ppm)
+
+        Serial.print("CO2 (ppm): ");
+        Serial.println(CO2);
+
+        int8_t Temp;
+        Temp = myMHZ19.getTemperature();                     // Request Temperature (as Celsius)
+        Serial.print("Temperature (C): ");
+        Serial.println(Temp);
+
+        getDataTimer = millis();
+    } 
+    //delay(2000);
+    temphumid();
 }
 
+void temphumid(){
+  if (millis()-getDataTimer >= 2000)
+  {
+    // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)
+    float h = dht.readHumidity();
+    // Read temperature as Celsius (the default)
+    float t = dht.readTemperature();
+    // Read temperature as Fahrenheit (isFahrenheit = true)
+    float f = dht.readTemperature(true);
+
+    // Check if any reads failed and exit early (to try again).
+    if (isnan(h) || isnan(t) || isnan(f)) {
+      Serial.println(F("Failed to read from DHT sensor!"));
+      return;
+    }
+
+    // Compute heat index in Fahrenheit (the default)
+    float hif = dht.computeHeatIndex(f, h);
+    // Compute heat index in Celsius (isFahreheit = false)
+    float hic = dht.computeHeatIndex(t, h, false);
+
+    Serial.print(F("Humidity: "));
+    Serial.print(h);
+    Serial.print(F("%  Temperature: "));
+    Serial.print(t);
+    Serial.print(F("°C "));
+    Serial.print(f);
+    Serial.print(F("°F  Heat index: "));
+    Serial.print(hic);
+    Serial.print(F("°C "));
+    Serial.print(hif);
+    Serial.println(F("°F"));
+    //delay(2000);
+  }
+}
 boolean readPMSdata(Stream *s) {
   if (! s->available()) {
     return false;

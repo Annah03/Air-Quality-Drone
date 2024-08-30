@@ -1,0 +1,20 @@
+Output: Gerber X2 Files
+Type  : GerberX2
+From  : Variant [[No Variations]] of Project [AQ_PCB.PrjPcb]
+   Generated File[AQ_PCB_Copper_Signal_Top.gbr]
+   Generated File[AQ_PCB_Copper_Signal_Bot.gbr]
+   Generated File[AQ_PCB_Legend_Top.gbr]
+   Generated File[AQ_PCB_Soldermask_Top.gbr]
+   Generated File[AQ_PCB_Soldermask_Bot.gbr]
+   Generated File[AQ_PCB_Paste_Top.gbr]
+   Generated File[AQ_PCB_Profile.gbr]
+   Generated File[AQ_PCB_NPTH_Drill.gbr]
+   Generated File[AQ_PCB_PTH_Drill.gbr]
+   Generated File[AQ_PCB.EXTREP]
+   Generated File[AQ_PCB.REP]
+
+
+Files Generated   : 11
+Documents Printed : 0
+
+Finished Output Generation At 12:44:04 PM On 7/25/2024

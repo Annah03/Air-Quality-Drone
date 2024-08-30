@@ -1,9 +1,10 @@
+
 //combine all code for dht11 (temp/humidity sensor), pm2.5 (particulate matter sensor), mhz19 (co2 sensor)
 //dht11
 #include "DHT.h"
 
 #define DPIN 23        //Pin to connect DHT sensor (GPIO number)
-#define DTYPE DHT11   // Define DHT 11 or DHT22 sensor type
+#define DTYPE DHT22   // Define DHT 11 or DHT22 sensor type
 
 DHT dht(DPIN,DTYPE);
 //pm2.5
@@ -46,17 +47,36 @@ void temp_humid()
 {
   delay(2000);
   
-  float tc = dht.readTemperature(false);  //Read temperature in C
-  float tf = dht.readTemperature(true);   //Read Temperature in F
-  float hu = dht.readHumidity();          //Read Humidity
+  // Reading temperature or humidity takes about 250 milliseconds!
+  // Sensor readings may also be up to 2 seconds 'old' (its a very slow sensor)
+  float h = dht.readHumidity();
+  // Read temperature as Celsius (the default)
+  float t = dht.readTemperature();
+  // Read temperature as Fahrenheit (isFahrenheit = true)
+  float f = dht.readTemperature(true);
 
-  Serial.print("Temp: ");
-  Serial.print(tc);
-  Serial.print(" C, ");
-  Serial.print(tf);
-  Serial.print(" F, Hum: ");
-  Serial.print(hu);
-  Serial.println("%");
+  // Check if any reads failed and exit early (to try again).
+  if (isnan(h) || isnan(t) || isnan(f)) {
+    Serial.println(F("Failed to read from DHT sensor!"));
+    return;
+  }
+
+  // Compute heat index in Fahrenheit (the default)
+  float hif = dht.computeHeatIndex(f, h);
+  // Compute heat index in Celsius (isFahreheit = false)
+  float hic = dht.computeHeatIndex(t, h, false);
+
+  Serial.print(F("Humidity: "));
+  Serial.print(h);
+  Serial.print(F("%  Temperature: "));
+  Serial.print(t);
+  Serial.print(F("°C "));
+  Serial.print(f);
+  Serial.print(F("°F  Heat index: "));
+  Serial.print(hic);
+  Serial.print(F("°C "));
+  Serial.print(hif);
+  Serial.println(F("°F"));
 }
 
 void pm()
@@ -83,6 +103,7 @@ if (readPMSdata(&Serial1)) {
     Serial.print("Particles > 10.0 um / 0.1L air:"); Serial.println(data.particles_100um);
     Serial.println("---------------------------------------");
     */
+    
   }
 }
 
@@ -135,3 +156,4 @@ boolean readPMSdata(Stream *s) {
   // success!
   return true;
 }
+
